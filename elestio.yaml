@@ -19,5 +19,4 @@ environments:
   - key: "ENV"
     value: "production"
 copyCommandConfig:
-  - ./package.json .
-  - ./.npmrc .
+  - .npmrc .
