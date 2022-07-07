@@ -18,6 +18,6 @@ ports:
 environments:
   - key: "ENV"
     value: "production"
-copyConfig:
+copyCommandConfig:
   - ./package.json .
   - ./.npmrc .
