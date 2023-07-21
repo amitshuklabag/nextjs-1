@@ -1,10 +1,10 @@
 config:
-  runTime: "NodeJs"
+  runTime: "docker"
   version: ""
-  framework: "NextJs"
-  buildCommand: "yarn build"
-  buildDir: ".next/"
-  runCommand: "yarn start"
+  framework: ""
+  buildCommand: "docker-compose build"
+  buildDir: "/"
+  runCommand: "docker-compose up -d"
 ports:
   - protocol: "HTTPS"
     targetProtocol: "HTTP"
@@ -18,5 +18,3 @@ ports:
 environments:
   - key: "ENV"
     value: "production"
-copyCommandConfig:
-  - .npmrc .
